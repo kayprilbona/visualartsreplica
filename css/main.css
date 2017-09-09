@@ -1,0 +1,341 @@
+/* universal selector applies to entire page */
+* {
+	/* changes font to Lato and sans if browser can't read */
+	font-family: 'Lato', sans-serif;
+	/* makes everything closer together */
+	margin: 0;
+	padding: 0;
+}
+
+/* changes style of all lines across page */
+hr {
+	border: 1px solid #c79852;
+	/* adds space between lines and paragraphs */
+	margin: 3% auto;
+	/* makes line short */
+	width: 7%;
+}
+
+/* moves 'VISUAL ARTS' in upper left corner more centered */
+nav {
+	margin: 0 1%;
+	/* adds space inside line to make it a double (box) */
+	padding: 1% 5%;
+}
+
+/* targets only nav section */
+/* '>' path to direct where exactly you're leading css to */
+nav > div {
+	display: inline-block;
+}
+
+
+/* targets nav links ('VISUAL ARTS') nested in div */
+nav > div > a {
+	color: #464646;
+	font-size: 16px;
+	font-weight: bold;
+	/* takes away underline */
+	text-decoration: none;
+}
+
+/* targets search box to place on the right side of page */
+/* 'last child' is the first paragraph under parent element */
+nav > div:last-child {
+	float: right;
+}
+
+/* targets 'search box'*/
+nav input {
+	border: none;
+}
+
+/* targets all sections */
+section {
+	padding-bottom: 50px;
+}
+
+/* targets "intro of Noah" */
+header {
+	margin: 0 auto;
+	text-align: center;
+	width: 80%;
+
+}
+
+/* targets Noah's photo */
+header img {
+	/* makes a circle around photo */
+	border-radius: 50%;
+	/* made it smaller */
+	height: 75px;
+	/* condensed left and right towards middle */
+	width: 75px;
+}
+
+header h1 {
+	color: #242424;
+	font-family: "Lora", serif;
+	/* added larger size to main heading */
+	font-size: 60px;
+	/* condensed h1 closer towards middle */
+	letter-spacing: -1px;
+	line-height: 60px;
+	margin: 1% 0;
+}
+
+/* targets date */
+header h2 {
+	color: #5f5f5f;
+	font-size: 20px;
+	font-weight: normal;
+	/* adds space between h1 and date */
+	margin: 5% 0 3%;
+}
+
+/* targets 'Noah Andrews' */
+header p {
+	font-size: 16px;
+	margin: 3% 0;
+}
+
+/* targets all sections within div container */
+section > div {
+	/* default margin values */
+	margin: 0 auto;
+	text-align: center;
+	/* condenses 1st paragraph towards middle */
+	width: 80%;
+}
+
+/* targets all section paragraphs within div containers */
+/* '>' same as path to div */
+section > div p {
+	color: #565656;
+	font-size: 16px;
+	/* adds space between lines */
+	line-height: 30px;
+	/* generates space around paragraphs, but within border */
+	padding: 0 15%;
+	margin: 3% 0;
+	/* makes all paragraphs centered but aligned left */
+	text-align: left;
+}
+
+/* targets quote, changes phrase to cursive */
+.personal-quote {
+	font-family: 'Petit Formal Script', cursive;
+	/* weight can be light, bold, normal, number */
+	font-weight: 700;
+	/* larger sized text */
+	font-size: 24px;
+	line-height: 36px;
+	/* default margin */
+	margin: 0 auto;
+	/* centers text */
+	text-align: center; 
+	width: 60%;
+}
+
+/* chairs images */
+.img-wrap {
+	/* last paragraph overlaps with img3 */
+	height: 450px;
+}
+
+/* allows image to float to the top left of paragraph */
+.img-wrap img {
+	float: left;
+}
+
+/* moves second image of chair to the right */
+.img-wrap img:first-child {
+	margin-left: 9%;
+}
+
+/* targets 3rd image - 'nth child' is numerical order */
+.img-wrap img:nth-child(n+2) {
+	margin-left: 7px;
+}
+
+/* targets last image and puts space between nth child (2nd image) and last child (3rd image)*/
+.img-wrap img:last-child {
+	margin-top: 7px;
+}
+
+/* path - targets all sections in the footer */
+section > footer {
+	/* default margin */
+	margin: 0 auto;
+	/* places 'likes' and input boxes in middle */
+	text-align: center;
+	width: 60%;
+}
+
+/* targets all divs inside footer inside section */
+section > footer > div {
+	color: #565656;
+}
+
+/* targets 'heart' icon and made it red */
+footer .fa-heart {
+	color: #E04F4A;
+	/* gives space between box and 'likes' */
+	margin-bottom: 3%;
+}
+
+/* 'Describe yourself here...' box */
+footer textarea {
+	/* makes background white */
+	background-color: #fff;
+	/* no image */
+	background-image: none; 
+	border: 1px solid #ccc;
+	/* takes precedence */
+	border-color: #e5e5e5;
+	/* rounded corners of 'Describe' box */
+	border-radius: 4px;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	color: #555;
+	font-size: 14px;
+	/* extended right and left - sets amount of space used for lines */
+	line-height: 1.42857143;
+	/* pushed away from 'likes' */
+	padding: 6px 12px;
+	/* made larger/rectangular */
+	width: 100%;
+}
+
+/* targets div classified 'button-group' */
+.button-group {
+	/* pushed 'bookmark', 'share', 'more', to the left of comment box */
+	text-align: left;
+}
+
+/* targets the buttons within 'button-group' class */
+.button-group button {
+	/* takes away border, background color for each is gray */
+	border: none;
+	/* changes each bg to white */
+	background: white;
+	/* changed font color to light gray */
+	color: #565656;
+	font-size: 12px;
+	/* pushed space between buttons */
+	padding: 0 5px 0 0;
+}
+
+/* targets last group button 'POST COMMENT' */
+.button-group button:last-child{
+	/* pushed to bottom right of comment box */
+	float: right;
+	padding: 0;
+}
+
+.button-group button:hover {
+	/* changes color when mouse hovers */
+	color: #5e5e5e;
+	cursor: pointer;
+	/* allows button to get larger when you hover - 0.3 seconds */
+	transition: 0.3s all ease-in-out;
+}
+
+/* path of the footer within the body */
+body > footer {
+	/* changed background of footer to light blue/gray */
+	background: #F8F9FD;
+	height: 200px;
+	/* pushed from left to off-center */
+	padding: 0 20%;
+	/* same as static, but can move anywhere you set, even stacking on top of elements */
+	position: relative;
+}
+
+.previous-article,
+.next-article {
+	/* allows other elements to surround and respects height and width */
+	display: inline-block;
+	/* moved articles next to each other vs underneath */
+	position: relative;
+	/* placed back underneath each other */
+	width: 50%;
+}
+
+.previous-article {
+	/* moved 'PREVOUS' off-center */
+	left: 20%;
+	/* stacked 'PREVIOUS' and 'NEXT' on top of each other */
+	/* element moves anywhere without other elements recognizing that it's still there */
+	position: absolute;
+}
+
+.previous-button {
+	/* positions previous button to the left */
+	text-align: left;
+}
+
+.next-article {
+	position: absolute;
+	/* moves to the right */
+	right: 20%;
+}
+
+.next-button {
+	/* separates two elements and places in correct spots */
+	text-align: right;
+}
+
+.previous-button,
+.next-button {
+	/* '%' specifies margin in width */
+	margin: 10% 0;
+}
+
+/* targets links */
+.previous-button a,
+.next-button a {
+	/* changed to dark gray color */
+	color: #434345;
+	font-weight: bold;
+	/* affects width of margin to the left/right */
+	margin: 3% 0;
+	/* took away underline */
+	text-decoration: none;
+}
+
+.previous-button p,
+.next-button p {
+	/* changes title of 'previous' and 'next' articles */
+	font-weight: normal;
+	/* moves articles down from 'Previous' and 'Next' */
+	margin: 3% 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

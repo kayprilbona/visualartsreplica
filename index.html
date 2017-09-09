@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<!-- lang is english -->
+<html lang="en">
+
+	<head>
+		<!-- character set -->
+		<meta charset="utf-8">
+		<!-- creator of website -->
+		<meta name="author" content="Codify Academy">
+		<!-- description of website -->
+		<meta name="description" content="Visual Arts Blog Website Replication">
+
+		<!-- title -->
+		<title>Visual Arts Blog Article</title>
+
+		<!-- favorite icon (img in tab) -->
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<!-- font awesome icons - points to external script file -->
+		<script src="https://use.fontawesome.com/9a77ea3aef.js"></script>
+		<!-- google fonts -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Petit+Formal+Script|Lora">
+		<!-- path from html to main.css -->
+		<link href="css/main.css" rel="stylesheet">
+	</head>
+	<body>
+
+		<!-- navigation section -->
+		<nav>
+			<!-- adds 'VISUAL ARTS' as a link and puts in own div -->
+			<div>
+				<!-- '#' redirects to same page you're currently on -->
+				<a href="#">VISUAL ARTS</a>
+			</div>
+			<!-- adds search icon -->
+			<div>
+				<i class="fa fa-search"></i>
+				<!-- adds a search box next to search icon -->
+				<input type="text" placeholder="SEARCH">
+			</div>	
+		</nav>
+		
+		<!-- header -->
+		<section>	
+			<header>
+				<!-- adds a photo of Noah -->
+				<img src="img/noah.png" alt="Noah Andrews">
+
+				<!-- adds his name underneath photo -->
+				<p>Noah Andrews</p>
+
+				<!-- adds first/largest heading - line break - special entity for '&' -->
+				<h1>The World of <br> Charles &amp; Ray Eames</h1>
+
+				<!-- adds second header -->
+				<h2>12 January 2016</h2>
+			</header>	
+
+				<!-- adds line across page -->
+				<hr>
+
+				<!-- adds first paragraph -->
+				<div>
+					<p>With a grand sense of adventure, Charles and Ray Eames turned their curiosity and boundless enthusiasm into creations that established them as a truly great husband and wife design team. Their unique synergy led to a whole new look in furniture. Lean and modern. Playful and functional. Sleek, sophisticated and beautifully simple. That was and is the "Eames look".</p>
+
+					<!-- adds image of chair - save image!! -->
+					<img src="img/chair1.png" alt="side view of chair">
+
+					<!-- adds second paragraph -->
+					<p>That look and their relationship with Herman Miller started with moulded plywood chairs in the late 1940s and included the world-renowned Eames lounge chair, now in the permanent collection of the Museum of Modern Art in New York</p>
+
+					<p>Charles and Ray achieved their monumental success by approaching each project the same way: Does it interest and intrigue us? Can we make it better?</p>
+
+					<!-- places this paragraph in own class - special entity for '&' - line break - span targets change only to '-Charles Eames' -->
+					<p class="personal-quote">"Choose your corner, pick away at it carefully, intensely &amp; to the best of your ability, &amp; that way, you might change the world" <br> <span>- Charles Eames</span></p>	
+
+					<p>The loved their work, which was a combination of art and science, design and architecture, process and product, style and function. "The details are not details", said Charles. "They make the product".</p>
+
+					<!-- places these images in own div containers -->
+					<div class="img-wrap">
+						<img src="img/chair2.png" alt="front view of chair">
+						<!-- places this specific image in own class -->
+						<img class="img-right" src="img/chair3.png" alt="under view of chair">
+						<img class="img-right" src="img/chair4.png" alt="under view of chair">
+					</div>
+					
+					<p>Their own concepts evloved over time, not overnight. As Charles noted about the development of the Moulded Plywood Chairs, "Yes, it was a flash of inspiration", he said, "a kind of 30-year flash".</p>
+
+					<p>A design critic ounce said that this extraordinary couple "just wanted to make the world a better place". That they did. That also made it a lot more interesting.</p>
+					
+				</div>
+
+				<!-- puts line across page -->
+				<hr>
+
+				<!-- one section of page -->
+				<footer>
+					<!-- adds heart icon and amount of likes -->
+					<div>
+						<i class="fa fa-heart"></i> 325 Likes
+					</div>	
+
+					<!-- form adds input box -->
+					<form>
+						<!-- adds a box that allows 5 rows to be written in - textarea gives the amount of space-->
+						<textarea rows="5" placeholder="Describe yourself here..."></textarea>
+
+						<!-- adds buttons under text box and in own div container -->
+						<div class="button-group">
+							<button>Bookmark</button>
+							<button>Share</button>
+							<button>More</button>
+							<!-- places 'POST COMMENT' in own class -->
+							<button class="button-right">POST COMMENT</button>
+						</div>	
+					</form>	
+				</footer>	
+			</section>	
+
+			<!-- adds second footer -->
+			<footer>
+				<!-- container for 'previous-article' -->
+				<div class="previous-article">
+					<!-- classified 'previous button' -->
+					<div class="previous-button">
+						<!-- adds link -->
+						<a href="#">
+							<!-- adds 'go back' arrow next to 'PREVIOUS' link -->
+							<i class="fa fa-arrow-left"></i> PREVIOUS ARTICLE
+
+							<!-- adds this as link -->
+							<p>How INSTRMNT Watches Are Made</p>
+						</a>	
+					</div>
+				</div>
+
+				<!-- container for the 'Next' section -->
+				<div class="next-article">
+					<div class="next-button">	
+						<!-- adds 'NEXT' next to next icon  -->
+						<a href="#">
+							NEXT ARTICLE <i class="fa fa-arrow-right"></i>
+							<p>The Corner House in Kitashirakawa</p>
+						</a>	
+					</div>	
+				</div>
+			</footer>		
+
+	</body>
+
+</html>
